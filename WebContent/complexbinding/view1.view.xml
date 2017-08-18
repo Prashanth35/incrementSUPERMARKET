@@ -1,0 +1,10 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="complexbinding.view1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="ComplexBinding">
+		<content>
+		<Button text = "{ parts : ['/text1' ,'/text2'] }"/>
+	     <Input value="{/text1}and{/text2} "/>
+	      <Button text = "{path :'/text2',formatter : '.myFoermaters'}" /> 
+		</content>
+	</Page>
+</core:View>
